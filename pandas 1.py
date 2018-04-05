@@ -48,7 +48,15 @@ df2 = pd.DataFrame(3*np.random.rand(4,2),index=['a','b','c','d'],columns = ['x',
 
 #饼状图
 # ser1.plot.pie(figsize=(6,6)) #单一列
-df2.plot.pie(subplots = True,figsize = (12,6)) #多列数据
+# ser1.plot.pie(labels = ['AA','BB','CC','DD'],colors = ['r','g','b','c'],autopct = '%.1f',fontsize = 10) # '%.1f'设置小数点位数
+# df2.plot.pie(subplots = True,figsize = (12,6)) #多列数据
+
+
+
+
+
+
+
 
 
 
