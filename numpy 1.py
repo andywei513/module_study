@@ -17,5 +17,8 @@ x = np.random.random_sample(size=(2,2))
 y = np.random.seed(1)
 y = np.random.rand(5)
 
+# range and arange
+z = np.arange(1,5)  #1,2,3,4
+m = range(1,5) #range对象
 
-print (y)
+

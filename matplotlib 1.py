@@ -55,7 +55,7 @@ iris['Species'] = load_iris().target
 
 #pairplot
 # sns.pairplot(iris, hue="Species", size=3)
-# sns.pairplot(iris, hue="Species", size=2, diag_kind="kde") #对角线改成kde
+sns.pairplot(iris, hue="Species", size=2, diag_kind="kde") #对角线改成kde
 
 #不同种类的箱线图
 # iris.boxplot(by="Species", figsize=(12, 6))
@@ -68,7 +68,28 @@ iris['Species'] = load_iris().target
 # parallel_coordinates(iris, "Species")
 
 #radviz
-radviz(iris, "Species")
+# radviz(iris, "Species")
 
+
+#绘图细节设置
+
+# fig = plt.figure() #画板
+# ax = fig.add_subplot(3,1,1) #3行一列，处于第一行
+# ax2 = fig.add_subplot(3,1,2) #3行一列，处于第二行
+# ax3 = fig.add_subplot(3,1,3) #3行2列，处于第3行
+#
+#
+# rect = plt.Rectangle((0.2, 0.75), 0.4, 0.15, color='k', alpha=0.3) #三角
+# circ = plt.Circle((0.7, 0.2), 0.15, color='b', alpha=0.3 )       #圆
+# pgon = plt.Polygon([[0.15, 0.15], [0.35, 0.4], [0.2, 0.6],[0.15,0.23],[0.4,0.5]], color='g', alpha=0.5)  #多角形
+#
+# ax.add_patch(rect)
+# ax2.add_patch(circ)
+# ax3.add_patch(pgon)
+#
+# plt.savefig('C://Users//ahuang3//Desktop//test.png') #保存图片
+# # plt.savefig('figpath.svg', dpi=400, bbox_inches='tight') #图片参数设置
 
 plt.show()
+
+
